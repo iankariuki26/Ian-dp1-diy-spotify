@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+
+# Data to be saved
+
+
+import json
+
+songs = [
+	
+        {       "title":"We Three Kings",
+                "album":"The Birth of a King",
+                "artist":"Tommee Profitt",
+                "genre":"Christmas",
+                "year": 2020
+        },
+        {
+                "title":"Come Thou Long Expected Jesus",
+                "album":"Christmas Hymns",
+                "artist": "Chris Tomlin",
+                "genre":"Christmas",
+                "year": 2009
+        },
+        {
+                "title":"Mary Did You Know?",
+                "album":"Maverick City Christmas",
+                "artist":"Maverick City Music",
+                "genre":"Christmas",
+                "year": 2022
+        },
+        {
+                "title":"Come Adore The Humble King",
+                "album":"Sing! The Life Of Christ Quintology",
+                "artist": "Keith & Kristyn Getty, Matt Boswell & Matt Papa",
+                "genre":"Christmas",
+                "year": 2019
+        },
+        {
+                "title":"Is He Worthy/ Agnus Dei / We Fall Down",
+                "album":"Maverick City Christmas",
+                "artist": "Maverick City Music",
+                "genre":"Christmas",
+                "year": 2022
+        },
+        {
+                "title":"Behold Him",
+                "album":"The Worship Initiative, Vol. 28 (Live)",
+                "artist": "The Worship Initiative",
+                "genre": "Christmas",
+                "year": 2022
+        },
+        {
+                "title":"Angels from the Realms of Glory",    
+                "album":"How Many Kings: Songs for Christmas",   
+                "artist": "Downhere",
+                "genre": "Christmas",
+                "year": 2009
+        },
+        {
+                "title":"Away in a Manger (All Glory to Jesus)",    
+                "album":"Heaven Has Come",   
+                "artist":"Sovereign Grace Music",
+                "genre": "Christmas",
+                "year": 2020
+        },
+        {
+                "title":"Sing We The Song Of Emmanuel",    
+                "album":"His Mercy Is More",   
+                "artist":"Matt Boswell & Matt Papa",
+                "genre": "Christmas",
+                "year": 2019
+        },
+        {
+                "title":"Hark! The Herald Angels Sing (Remastered 1999)",    
+                "album":"The Christmas Song",   
+                "artist":"Nat King Cole",
+                "genre":"Christmas",
+                "year": 1960
+        },
+
+]
+
+# Writing data to a json file
+
+for i, song in enumerate(songs,1):
+        with open(f'song{i}.json','w') as json_file:
+	        json.dump(song,json_file, indent=4)
+
+print("Files created successfully")
+
