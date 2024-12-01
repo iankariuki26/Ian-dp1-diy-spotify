@@ -74,14 +74,13 @@ def get_songs():
 
 
 
+@app.get("/")  # zone ap
+def zone_apex():
+     return {"This is being used for": "Ian Kariuki's Spotify Project!"}
 
-# @app.get("/")  # zone ap
-# def zone_apex():
-#     return {"What's up": "cowa-bunga!"}
-
-# # @app.get("/sum/{a}/{b}")
-# # def add(a: int, b: int):
-# #     return {"sum": a + b}
+# @app.get("/sum/{a}/{b}")
+# def add(a: int, b: int):
+#      return {"sum": a + b}
 
 
 # @app.get("/multiply/{c}/{d}")
