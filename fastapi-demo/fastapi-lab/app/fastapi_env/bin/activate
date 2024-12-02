@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/iankariuki/UVADS/Systems - intro to computing/Project1/fastapi-lab/app/fastapi_env"
+VIRTUAL_ENV="/Users/iankariuki/UVADS/Systems - intro to computing/Project1/fastapi-demo/fastapi-lab/app/fastapi_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

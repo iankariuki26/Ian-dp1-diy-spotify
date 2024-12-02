@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/iankariuki/UVADS/Systems - intro to computing/Project1/fastapi-lab/app/fastapi_env"
+set -gx VIRTUAL_ENV "/Users/iankariuki/UVADS/Systems - intro to computing/Project1/fastapi-demo/fastapi-lab/app/fastapi_env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
