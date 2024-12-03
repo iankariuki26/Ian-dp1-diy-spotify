@@ -13,8 +13,8 @@ from fastapi import FastAPI
 
 DB = "epj7rf"
 
-DBHOST = os.environ['ds2022.cqee4iwdcaph.us-east-1.rds.amazonaws.com']
-DBUSER = os.environ['admin']
+DBHOST ='ds2022.cqee4iwdcaph.us-east-1.rds.amazonaws.com'
+DBUSER ='admin'
 DBPASS = os.environ['DBPASS']
 db = mysql.connector.connect(user=DBUSER, host=DBHOST, password=DBPASS, database=DB)
 cur=db.cursor()
