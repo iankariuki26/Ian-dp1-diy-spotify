@@ -13,8 +13,8 @@ from fastapi import FastAPI
 
 DB = "epj7rf"
 
-DBHOST =os.environ['DBHOST']
-DBUSER =os.environ['DBUSER']
+DBHOST = 'ds2022.cqee4iwdcaph.us-east-1.rds.amazonaws.com'
+DBUSER = 'admin'
 DBPASS = os.environ['DBPASS']
 db = mysql.connector.connect(user=DBUSER, host=DBHOST, password=DBPASS, database=DB)
 cur=db.cursor()
@@ -53,7 +53,7 @@ def get_songs():
 def get_songs():
     db = mysql.connector.connect(user=DBUSER, host=DBHOST, password=DBPASS, database=DB)
     cur=db.cursor()
-    query = "SELECT * FROM songs ORDER BY title;"
+    query = "SELECT * FROM songs JOIN genres ON songs.genre = genres.genreid ORDER BY title;"
     try:    
         cur.execute(query)
         headers=[x[0] for x in cur.description]
